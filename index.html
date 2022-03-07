@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en/es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./practicacss.css">
+    </head>
+    <body>
+        <main>
+
+            <section class="select-player">
+                <div class="container">
+                    <h1>Choose a player</h1>
+                    <div class="player-flex">
+                        <div class="player-selected"><img src="./x.png" alt=""></div>
+                        <div class="player-selected"><img src="./o.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+            <div class="container">
+                <h1>Tic Tac Toe</h1>
+                    <div class="grid-container">
+                        <div class="grid-items animation"><img src="//:0" alt=""></div>
+                        <div class="grid-items animation"><img src="//:0" alt=""></div>
+                        <div class="grid-items animation"><img src="//:0" alt=""></div>
+                        <div class="grid-items animation"><img src="//:0" alt=""></div>
+                        <div class="grid-items animation"><img src="//:0" alt=""></div>
+                        <div class="grid-items animation"><img src="//:0" alt=""></div>
+                        <div class="grid-items animation"><img src="//:0" alt=""></div>
+                        <div class="grid-items animation"><img src="//:0" alt=""></div>
+                        <div class="grid-items animation"><img src="//:0" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <template id='template'>
+                <swal-icon></swal-icon>
+                <swal-title></swal-title>
+                <swal-html></swal-html>
+                <swal-button type="cancel">Ok</swal-button>
+                <swal-button type="confirm">Reset</swal-button>
+            </template>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./practicajs.js"></script>
+    </body>
+</html>
+
+
+<!-- TODO: SWEETALERT https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js -->
+<!-- TODO: AXIOS https://unpkg.com/axios/dist/axios.min.js -->
