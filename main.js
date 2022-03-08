@@ -30,7 +30,7 @@ function playerChosed() {
 
 function selectBox() {
     if (!clicked) {
-        if (this.lastElementChild.src === '//:0') {
+        if (this.lastElementChild.src.includes('//:0')) {
         this.lastElementChild.src = game.player
         this.style.backgroundColor = game.playerColor()
         this.classList.remove('animation')
@@ -57,7 +57,7 @@ const randomSelection = () => {
 const randomNumber = () => {
     let arr = []
     items.forEach(element => {
-        if (element.lastElementChild.src !== '//:0') {
+        if (!element.lastElementChild.src.includes('//:0')) {
             return arr.push(items.indexOf(element))
         }
     })
@@ -141,7 +141,7 @@ const winner6 = () => {
 }
 
 const winner7 = () => {
-    let drawCheck = items.filter(element => element.lastElementChild.src == '//:0')
+    let drawCheck = items.filter(element => element.lastElementChild.src.includes('//:0'))
     if (drawCheck.length == 0 && winner1() == undefined && winner2() == undefined &&
         winner3() == undefined && winner4() == undefined && winner5() == undefined &&
         winner6() == undefined) {
